@@ -1,5 +1,17 @@
 # Docker Image with nginx-vod-module nginx-rtmp-module and ffmpeg
 
+```bash build image
+docker-compose stop nginx
+docker-compose rm -f nginx
+docker rmi hls-nginx
+docker build -t hls-nginx .
+```
+
+### url
+http://127.0.0.1/hls/test-big.mp4/master.m3u8
+
+### mapped url
+http://127.0.0.1:8384/json_hls/test-1.json/index.m3u8
 
 ## Description
 This Image is a solution for live- and VOD streaming.

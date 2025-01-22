@@ -1,0 +1,17 @@
+{
+  "durations": [ 10000, 10000 ],
+  "sequences": [
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/opt/static/videos/s-1.mp4"
+        },
+        {
+          "type": "source",
+          "path": "/opt/static/videos/s-2.mp4"
+        }
+      ]
+    }
+  ]
+}

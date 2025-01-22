@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    image: hls-nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "8384:8384"
+    volumes:
+      - C:\Users\kimey\Videos:/opt/static/videos
+      - C:\Users\kimey\Documents\09_movie\01_project\nginx-vod-live-hls\vod-json:/opt/static/vod-json
+#      - ./nginx.conf:/opt/nginx/nginx.conf
+    restart: unless-stopped
