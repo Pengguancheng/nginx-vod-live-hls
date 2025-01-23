@@ -1,0 +1,17 @@
+{
+  "durations": [ 30000, 30000 ],
+  "sequences": [
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/http/minio/movie/s-1.mp4"
+        },
+        {
+          "type": "source",
+          "path": "/http/minio/movie/s-2.mp4"
+        }
+      ]
+    }
+  ]
+}

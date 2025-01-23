@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   nginx:
@@ -12,3 +12,8 @@ services:
       - C:\Users\kimey\Documents\09_movie\01_project\nginx-vod-live-hls\vod-json:/opt/static/vod-json
 #      - ./nginx.conf:/opt/nginx/nginx.conf
     restart: unless-stopped
+
+networks:
+  default:
+    external:
+      name: movie

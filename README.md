@@ -5,6 +5,7 @@ docker-compose stop nginx
 docker-compose rm -f nginx
 docker rmi hls-nginx
 docker build -t hls-nginx .
+docker-compose up -d nginx
 ```
 
 ### url
